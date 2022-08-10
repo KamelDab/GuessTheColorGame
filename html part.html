@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>Guess The Color Game</title>
+        <meta charset = 'utf-8'>
+        <link rel = 'stylesheet' href = 'css part.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital@0;1&family=Monoton&family=Montserrat:ital,wght@0,100;0,600;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Lobster&family=Merriweather:ital@0;1&family=Monoton&family=Montserrat:ital,wght@0,100;0,600;1,500&display=swap" rel="stylesheet">
+       
+    </head>
+    <body>
+        <div id = container> 
+            <div id = 'title'>
+                Guess The Color
+            </div>
+            <div id = 'start' onclick='changeBoxColor()'>
+              Start
+            </div> 
+            <div id = 'winMessage'>
+                You Win!
+            </div>
+            <div id = 'again' onclick = 'newGame()'>
+                Play Again ?
+            </div>
+        </div>
+        <audio id='player' src="theme.mp3"></audio>
+        <div id = 'buttons'> 
+          <button onclick="playMusic()">Play</button> 
+          <button onclick="pauseMusic()">Pause</button> 
+          <button onclick="volumeUp()">Volume Up</button> 
+          <button onclick="volumeDown()">Volume Down</button> 
+        </div>
+        <div id = 'gameContainer'>
+            <div class = 'box 1'></div>
+            <div class = 'box 2'></div>
+            <div class = 'box 3'></div>
+            <div class = 'box 4'></div>
+            <div class = 'box 5'></div>
+            <div class = 'box 6'></div>
+            <div class = 'life'></div>
+        </div>
+        <div id = 'gameOver'>
+            You Lost! <br>
+            Game Over
+        </div>
+        <script src = 'javascript part.js'>
+        </script>
+    </body>
+</html>    
